@@ -13,12 +13,14 @@ Include the neural network model diagram.
 ## DESIGN STEPS
 
 ### STEP 1:
+Import the required packages.
 
 ### STEP 2:
-
+Load and preprocess the cell images, splitting them into training and testing sets.
 ### STEP 3:
-
-Write your own steps
+Train a convolutional neural network model to classify the images as infected or uninfected.
+### STEP 4:
+Evaluate the model's performance on the testing set and make predictions on new images.
 
 ## PROGRAM
 
@@ -69,9 +71,7 @@ len(os.listdir(train_path+'/parasitized/'))
 
 os.listdir(train_path+'/parasitized')[0]
 
-para_img= imread(train_path+
-                 '/parasitized/'+
-                 os.listdir(train_path+'/parasitized')[0])
+para_img= imread(train_path+'/parasitized/'+ os.listdir(train_path+'/parasitized')[0])
 
 plt.imshow(para_img)
 
